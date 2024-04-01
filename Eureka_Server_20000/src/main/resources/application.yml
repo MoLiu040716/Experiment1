@@ -1,0 +1,15 @@
+server:
+  port: 20000
+
+eureka:
+  instance:
+    hostname: "eurekaServer20000"
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: " http://eurekaServer20001:20001/eureka/"
+  server:
+    enable-self-preservation: false
+
+
